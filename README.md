@@ -39,7 +39,7 @@ The challenge is to fulfill the user-stories given in the challenge and build a 
 
 ### What I learned
 
-In this challenge, I tried flexbox and got familiar with using it. I used different types of input to make the survey form. I used different pseudo selectors to target and style the html elements. 
+In this challenge, I used flexbox to layour the webpage and got familiar with using it. I used different types of input to make the survey form. I used different pseudo selectors to target and style the html elements. 
 
 ```css
 body::before{
