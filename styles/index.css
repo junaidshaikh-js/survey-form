@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    background: url('https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847_1280.jpg') no-repeat center center/cover;
+background-color: #9e9efd;
+    opacity: 0.7;
+}
+
+#title{
+    margin: 0px;
+    font-size: 5rem;
+    text-align: center;
+}
+
+#description{
+    font-size: 1.5rem ;
+    text-align: center;
+    font-style: italic;
+}
+
+.header-content{
+    margin-top: 0.25rem;
+}
+
+#survey-form{
+    display: block;
+    margin:  1.5rem auto;
+    width: 50vw;
+    border: 0.3rem solid white;
+    background: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 5px 5px rgb(92, 92, 92);
+    background-color:rgb(173 173 231 / 0.6);
+}
+
+.group{
+    margin: 2px;
+    padding: 10px;
+}
+
+.block{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+textarea{
+    height: 12rem;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#submit{
+    cursor: pointer;
+    border-radius: 0.3rem;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    display: block;
+    margin: auto;
+    background-color: rgb(93 143 255);
+}
+
+#submit:hover{
+    background-color: #003a74;
+}
+
+#fieldset, #checkbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.radio, .checkbox{
+    display: inline-block;
+    min-height: 1.2rem;
+    min-width: 1.2rem;
+}
+
+ #form [placeholder]{
+    font-size: 1.2rem;
+}
+
+@media (max-width: 500px){
+   #title{
+        font-size: 2rem;
+        line-height: 1;
+        margin: 0px;
+   }
+   #description{
+       font-size: 0.8rem;
+       margin-top: 0px;
+   }
+   #survey-form{
+       width: 90vw;
+   }
+}
+@media (max-width: 700px){
+    #title{
+        font-size: 3rem;
+    }
+    #survey-form{
+        width: 80vw;
+        font-size: 1rem;
+    }
+    #form [placeholder] {
+        font-size: 0.8rem;
+      }
+      .block{
+        padding: 5px;
+        border-radius: 8px;
+      }
+}

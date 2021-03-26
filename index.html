@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="form">
+        <header>
+            <h1 id="title" class="header-content">Feedback Form</h1>
+            <p id="description" class="header-content">We would love to hear your thoughts, suggestions, concerns or
+                problems with anything so we can improve!</p>
+        </header>
+        <form action="" id="survey-form">
+            <div class="group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your Name" class="block" required>
+            </div>
+            <div class="group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" class="block" required>
+            </div>
+            <div class="group">
+                <label for="dropdown">Gender</label>
+                <select name="dropdown" id="dropdown" class="block">
+                    <option disabled selected>Select your Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other </option>
+                </select>
+            </div>
+            <div class="group">
+                <label for="number" id="number-label">How would you like to rate us on scale of 1 to 10</label>
+                <input type="number" name="rating" id="number" min="1" max="10" placeholder="1-10" class="block">
+            </div>
+            <div class="group">
+                <fieldset id="fieldset">
+                    <legend>How likely are you to recommend our service to your friend or colleague?</legend>
+                    <label>
+                        <input type="radio" name="recommendation" value="very likely" class="radio">Very Likely</label>
+                    <label>
+                        <input type="radio" name="recommendation" value="somewhat likely" class="radio">
+                        Somewhat likely</label>
+
+                    <label>
+                        <input type="radio" name="recommendation" value="unsure" class="radio">
+                        Unsure</label>
+                    <label>
+                        <input type="radio" name="recommendation" value="not very likely" class="radio">
+                        Not very likely</label>
+                    <label>
+                        <input type="radio" name="recommendation" value="not likely" class="radio">Not likely</label>
+                </fieldset>
+            </div>
+            <div class="group" id="checkbox">
+                <p>Which platform do you use?</p>
+                <label>
+                    <input type="checkbox" name="platform" value="windows" class="checkbox">
+                    Windows</label>
+                <label>
+                    <input type="checkbox" name="platform" value="mac os" class="checkbox">
+                    Mac OS</label>
+                <label>
+                    <input type="checkbox" name="platform" value="linux" class="checkbox">
+                    Linux</label>
+                <label>
+                    <input type="checkbox" name="platform" value="other" class="checkbox">
+                    Other</label>
+            </div>
+            <div class="group">
+                <label for="textarea">How can we improve our service?</label>
+                <br>
+                <textarea name="" id="textarea" cols="30" rows="10" placeholder="Describe your feedback!"></textarea>
+            </div>
+            <button class="group" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
